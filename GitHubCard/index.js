@@ -66,7 +66,6 @@ const followersArray = ["tetondan", "dustinmyers", "justsml", "luishrd", "bigkne
 
 */
 
-
 function cardCreator(object) {
   const card = document.createElement('div')
   const image = document.createElement('img')
@@ -106,8 +105,6 @@ function cardCreator(object) {
 
   return card
 }
-
-
 
 followersArray.forEach( item => {
   axios.get(`https://api.github.com/users/${item}`)
